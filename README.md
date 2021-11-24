@@ -126,3 +126,7 @@ The `TreeReadTraverser` is to the `NodeReadGuard` as the `TreeWriteTraverser` is
 While the `NodeReadGuard` holds immutable access to a subset of the tree, a `TreeReadTraverser` holds 
 immutable access to the entire tree. This allows the `TreeReadTraverser` to safely traverse to 
 its parent node.
+
+# Fork motives 
+Compiles in rustc 1.58.0-nightly (a77da2d45 2021-11-19), should also in current stable.
+Due to breaking changes this is version 0.3.0 .
