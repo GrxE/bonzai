@@ -1,6 +1,7 @@
 
 use super::*;
-
+use FixedSizeArray;
+#[should_panic]
 #[test]
 fn bad_test() {
     // the test here, is that this code shouldn't compile
@@ -23,7 +24,7 @@ error[E0499]: cannot borrow `op` as mutable more than once at a time
 
     */
 
-    /*
+    // /*
     let mut tree = Tree::<i32, [ChildId; 2]>::new();
     let mut op = tree.operation();
     op.write_root();
@@ -44,5 +45,5 @@ error[E0499]: cannot borrow `op` as mutable more than once at a time
 
     println!("{}", ae);
     println!("{}", be);
-    */
+    // */
 }
